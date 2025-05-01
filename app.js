@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const authRoutes = require('./routes/auth');
-const agencyRoutes = require('./routes/agency');
-const clientRoutes = require('./routes/client');
-const authMiddleware = require('./middleware/auth');
+const authRoutes = require('./src/routes/auth');
+const agencyRoutes = require('./src/routes/agency');
+const clientRoutes = require('./src/routes/client');
+const authMiddleware = require('./src/middleware/auth');
 
 dotenv.config();
 const app = express();
